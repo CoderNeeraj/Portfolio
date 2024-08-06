@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="favicon/favicon.jpg">
+    <title>Portfolio - Neeraj Kumar Gautam</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #8fc5ca, #e8b0c0); /* Background with Holi-like colors */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 50px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .circular-button-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        .circular-button {
+            width: 100%;
+            height: 100%;
+            background-color: #007bff; /* Blue color for professional look */
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .circular-button:hover {
+            transform: scale(1.1);
+            background-color: #0056b3;
+        }
+
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Space between the buttons */
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #444;
+            color: white;
+        }
+
+        td {
+            background-color: #d6eaf8;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My Professional Portfolio</h1>
+        <h2><mark>Neeraj Kumar Gautam</mark></h2>
+    </div>
+    
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/neeraj-kumar-gautam-9b323412a/" target="_blank" title="Connect on LinkedIn" class="circular-button-container">
+            <div class="circular-button">LinkedIn</div>
+        </a>
+        <a href="mailto:gautamneeraj1012@gmail.com" title="Connect via Email" class="circular-button-container">
+            <div class="circular-button">Email</div>
+        </a>
+    </div>
+
+    <div class="circle">
+        <a href="newmy_resume.html" target="_blank" title="View Resume" class="circular-button-container">
+            <div class="circular-button">Resume</div>
+        </a>
+        
+        <a href="https://github.com/CoderNeeraj" target="_blank" title="View Github" class="circular-button-container">
+            <div class="circular-button">Github</div>
+        </a>
+    </div>
+    
+    
+    
+
+    <div class="table-container">
+        <h3 align="center"><mark style="background-color:aqua;">Available to Work</mark></h3>
+        <table align="center">
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <td>N/A</td>
+                <td>Day or Night Shift</td>
+                <td>Day or Night Shift</td>
+                <td>Day or Night Shift</td>
+                <td>Day or Night Shift</td>
+                <td>Day or Night Shift</td>
+                <td>N/A</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Neeraj Kumar Gautam. All rights reserved.
+    </div>
+</body>
+</html>

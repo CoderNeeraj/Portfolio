@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Neeraj Kumar Gautam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #333;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        .section-title:hover {
+            background-color: #0056b3;
+        }
+        .section-content {
+            display: none;
+            margin-bottom: 20px;
+        }
+        .contact-info p, .education p, .experience p, .projects p, .skills p, .publications p, .activities p {
+            margin: 5px 0;
+        }
+        .project-title, .experience-title, .publication-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Neeraj Kumar Gautam</h1>
+
+        <button class="section-title" onclick="toggleSection('contact-info')">Contact Information</button>
+        <div id="contact-info" class="section-content">
+            <p><strong>Phone:</strong> +91 8272853849</p>
+            <p><strong>Location:</strong> Basti District, Uttar Pradesh</p>
+            <p><strong>Email:</strong> gautamneeraj1012@gmail.com</p>
+            <p><strong>Portfolio:</strong> <a href="https://linkedin.com/in/neeraj-kumar-gautam-9b323412a/">linkedin.com/in/neeraj-kumar-gautam-9b323412a/</a></p>
+        </div>
+
+        <button class="section-title" onclick="toggleSection('education')">Education</button>
+        <div id="education" class="section-content">
+            <p><strong>M.Tech. Degree in Electronics and Communication Engineering</strong></p>
+            <p>National Institute of Technology, Rourkela | 8.17/10 | Jun 2024</p>
+
+            <p><strong>B.Tech Degree in Electrical and Electronics Engineering</strong></p>
+            <p>Krishna Institute of Engineering & Technology | 72.96% | June 2019</p>
+
+            <p><strong>Intermediate</strong></p>
+            <p>S N P Mishra Shanti Devi Inter College | 72.40% | June 2014</p>
+
+            <p><strong>High school</strong></p>
+            <p>Sarla International Academy | 8.6/10 | May 2011</p>
+        </div>
+
+        <button class="section-title" onclick="toggleSection('experience')">Technical Experience</button>
+        <div id="experience" class="section-content">
+            <p class="experience-title">Data Science Intern | June 2024 — July 2024</p>
+            <p>Exposys Data Lab</p>
+            <a href="https://diabetic-positive-negative-detection.onrender.com/" target="_blank" title="View Data Sciene Project" >
+                <button>Webpage</button>
+            </a>
+            <ul>
+                <li>Developed an early prediction model for diabetic patients using the PIMA Indian dataset, performing comprehensive data analysis and applying machine learning algorithms such as AdaBoost, Random Forest, Decision Tree, and Gradient Boosting.</li>
+                <li>Achieved a model accuracy of 84% with Gradient Boosting by conducting feature engineering, hyperparameter tuning, and statistical data analysis to optimize model performance.</li>
+                <li>Successfully deployed a predictive analytics model using Flask, integrating front-end technologies (HTML/CSS) and version control with VScode, and hosted the application on Render, enabling real-time data insights.</li>
+                <li>Enhanced proficiency in Python for data analysis, including data preprocessing, exploratory data analysis (EDA), and visualization, leading to effective data-driven decision-making and model deployment.</li>
+            </ul>
+
+            <p class="experience-title">Data analysis Intern | June 2018 – July 2018</p>
+            <p>UPPTCL Muradnagar</p>
+            <ul>
+                <li>Conducted data collection and analysis on hourly power consumption data using Excel, gaining insights into electricity usage fluctuations and enhancing data-driven decision-making in power systems.</li>
+                <li>Utilized Excel for data preprocessing and visualization, providing valuable insights into daily electricity usage patterns during a Power Transmission and Distribution internship.</li>
+            </ul>
+        </div>
+
+        <button class="section-title" onclick="toggleSection('projects')">Projects</button>
+        <div id="projects" class="section-content">
+            <p class="project-title">Coral Reef Bleaching Detection using Deep Learning based Approaches | 2024</p>
+            <ul>
+                <li>Developed a deep learning model using Convolutional Autoencoder to detect coral reef bleaching, achieving 76.5% accuracy on a Kaggle dataset, leveraging tools like Python, Keras, and TensorFlow for data processing and model training.</li>
+                <li>Conducted comprehensive data analysis and model validation to optimize coral bleaching detection, with research submitted to the 4th IEEE International Conference on Artificial Intelligence and Signal Processing (AISP ’24).</li>
+            </ul>
+
+            <p class="project-title">Coral Reef Species Detection with Modified Xception Model | 2023 – 2024</p>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=o754KnQAAAAJ&citation_for_view=o754KnQAAAAJ:u5HHmVD_uO8C" target="_blank" title="View Coral Species Detection Project" >
+                <button>Google Scholar</button>
+            </a>
+            
+            <ul>
+                <li>Developed an advanced deep learning model using a modified Xception architecture to classify 14 coral reef species, achieving 88.46% accuracy, surpassing state-of-the-art methods.</li>
+                <li>Utilized Python, Keras, and TensorFlow for model development and training, with research accepted at the 4th International Conference on Information Technology (InCITe 2024), Amity University.</li>
+            </ul>
+
+            <p class="project-title">Text Summarization and Language Conversion using NLP | 2023 – 2024</p>
+            <ul>
+                <li>Implemented a pretrained Transformer model for text summarization and language translation, applying Natural Language Processing (NLP) techniques to process and analyze data from fetched URLs.</li>
+                <li>Employed Python, Keras, and TensorFlow to develop and deploy the NLP-based system, enhancing text analysis and language conversion capabilities.</li>
+            </ul>
+
+            <p class="project-title">Machine Learning Approach for Book Recommendation System | 2023</p>
+            <ul>
+                <li>Developed a book recommendation system by fine-tuning the K-Nearest Neighbor (KNN) model on a Kaggle dataset, improving recommendation accuracy.</li>
+                <li>Leveraged Python, Scikit-learn, and Pandas for data preprocessing, model training, and evaluation, contributing to effective user personalization and recommendation strategies.</li>
+            </ul>
+        </div>
+
+        <button class="section-title" onclick="toggleSection('publications')">Publications</button>
+        <div id="publications" class="section-content">
+            <ul><li><p class="publication-title">Neeraj Kumar Gautam, Mayank Mishra, U.C.Pati, ”Coral Reef Species Detection with a Modified Xception based Model” 4th International Conference on Information Technology (InCITe 2024), Amity University, India, 2024 (Accepted and Presented)</p></li></ul>
+            <ul><li><p class="publication-title">Neeraj Kumar Gautam, Mayank Mishra, U.C.Pati, ”Bleaching Detection in Coral Reef using Deep Convolutional Autoencoder based Model” 4th IEEE International Conference on Artificial Intelligence and Signal Processing-AISP ’24, VIT-AP University, India, 2024 (Submitted)</p></li></ul>
+            
+        </div>
+
+        <button class="section-title" onclick="toggleSection('skills')">Skills</button>
+        <div id="skills" class="section-content">
+            <p><strong>Programming Languages:</strong> C, Python, Machine Learning, HTML, CSS</p>
+            <p><strong>Tools:</strong> Github, Pandas, Numpy, Scikit-learn, Keras, NLP, Tensorflow</p>
+            <p><strong>Software:</strong> PV Syst, Visio, Power BI, Microsoft Powerpoint, Excel, Word</p>
+            <p><strong>Relevant Courses:</strong> Image Processing, Deep learning, Natural Language Processing (NLP), Data Structure and Algorithm (DSA)</p>
+            <p><strong>Communication:</strong> English, Hindi</p>
+        </div>
+
+        <button class="section-title" onclick="toggleSection('activities')">Activities</button>
+        <div id="activities" class="section-content">
+            <p><strong>Teaching Assistant, National Institute of Technology, Rourkela | Aug 2023 — May 2024</strong></p>
+            <p><strong>Achieved 1st Position in Rapid fire Quiz organized by HB Hall | 2024</strong></p>
+            <p><strong>Campus Ambassador for HackNITR Event | 2022-2023</strong></p>
+            <p><strong>Achieved 2nd position in Inno-Tech 2017 Project exhibition organized by Krishna Institute of Engineering and Technology | 2017</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
